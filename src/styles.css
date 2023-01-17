@@ -38,3 +38,10 @@ a:hover {
   display: block;
   margin-bottom: 40px;
 }
+
+.container {
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  text-indent: 40px;
+}
