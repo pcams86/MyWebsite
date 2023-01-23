@@ -33,6 +33,11 @@ a:hover {
   color: #fff;
 }
 
+a.active {
+  background-color: #333;
+  color: #fff;
+}
+
 #construction-icon {
   font-size: 72px;
   display: block;
@@ -78,4 +83,8 @@ a:hover {
 .card-right {
   width: 70%;
   text-align: left;
+}
+
+.navbar {
+  margin-top: 2em;
 }
