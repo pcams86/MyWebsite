@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
 
 body {
-  background-color: #f5f5f5;
+  background-color: #ccc;
   font-family: Arial, sans-serif;
   text-align: center;
 }
@@ -9,39 +9,47 @@ body {
 h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  margin-top: 3em;
 }
 
 p {
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
-a {
+nav {
+  position: fixed;
+  top: -10px;
+  z-index: 1;
+  transform: translate(-50%, 15%);
+  left: 50%;
+}
+
+.navbar {
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
   margin-right: 10px;
-  text-decoration: none;
-  color: #333;
   border: 1px solid #333;
   border-radius: 8px;
   transition: all 0.2s ease-in-out;
 }
 
-a:hover {
+.navbar a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #333;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
   background-color: #333;
   color: #fff;
 }
 
-a.active {
+.navbar a.active {
   background-color: #333;
   color: #fff;
-}
-
-#construction-icon {
-  font-size: 72px;
-  display: block;
-  margin-bottom: 40px;
 }
 
 #about-me {
@@ -51,40 +59,138 @@ a.active {
   text-indent: 30px;
 }
 
-#title-box {
-  background-color: dodgerblue;
-  width: 50%;
-}
-
 .container {
   padding: 2px 16px;
 }
 
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card {
+.projects a .card {
   align-items: flex-start;
-  display: flex;
+  background-color: rgb(234, 233, 233);
+  display: inline-flex;
   flex-wrap: wrap;
   width: 50%;
   margin: 2em auto;
   padding: 1em;
   border: 1px solid #ccc;
-  border-radius: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-.card-left {
+.projects a .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+.projects a .card-left {
   width: 30%;
   text-align: left;
 }
 
-.card-right {
+.projects a .card-right {
   width: 70%;
   text-align: left;
 }
 
-.navbar {
-  margin-top: 2em;
+.projects a {
+  text-decoration: none;
+  color: #333;
+  margin: 2em auto;
+}
+
+.bg-image-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  padding: 150px 0 50px 0;
+  position: relative;
+}
+
+.bg-image.img1 {
+  width: 500px;
+  height: 700px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(12deg);
+  background-attachment: fixed;
+}
+
+.bg-image.img2 {
+  width: 500px;
+  height: 700px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(-12deg);
+  background-attachment: fixed;
+}
+
+.bg-image.img3 {
+  width: 500px;
+  height: 700px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(25deg);
+  background-attachment: fixed;
+}
+
+.bg-image.img4 {
+  width: 800px;
+  height: 500px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(-6deg);
+  background-attachment: fixed;
+}
+
+.bg-image.img6 {
+  width: 1100px;
+  height: 500px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(2deg);
+  background-attachment: fixed;
+}
+
+.bg-image.img5 {
+  width: 800px;
+  height: 500px;
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(12deg);
+  background-attachment: fixed;
+}
+
+.img1 {
+  background-image: url("../src/components/images/img1.jpeg");
+}
+
+.img2 {
+  background-image: url("../src/components/images/img2.jpeg");
+}
+
+.img3 {
+  background-image: url("../src/components/images/img3.jpeg");
+}
+
+.img4 {
+  background-image: url("../src/components/images/img4.jpeg");
+}
+
+.img5 {
+  background-image: url("../src/components/images/img5.jpeg");
+}
+
+.img6 {
+  background-image: url("../src/components/images/img6.jpeg");
 }
